@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libfec_rs
 LOCAL_CLANG := true
 LOCAL_CFLAGS := -Wall -O3
-LOCAL_DETECT_INTEGER_OVERFLOWS := true
+LOCAL_SANITIZE := integer
 LOCAL_SRC_FILES := \
 	encode_rs_char.c \
 	decode_rs_char.c \
@@ -15,7 +15,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libfec_rs_host
 LOCAL_CLANG := true
 LOCAL_CFLAGS := -Wall -O3
-LOCAL_DETECT_INTEGER_OVERFLOWS := true
+LOCAL_SANITIZE := integer
 LOCAL_SRC_FILES := \
 	encode_rs_char.c \
 	decode_rs_char.c \
