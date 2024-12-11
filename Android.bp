@@ -48,7 +48,7 @@ cc_library {
     cflags: [
         "-Wall",
         "-Werror",
-        "-O3"
+        "-O3",
     ],
     export_include_dirs: ["."],
 
