@@ -12,4 +12,9 @@ third_party {
     month: 8
     day: 7
   }
+  security: {
+    tag: "android:on_device_usage"
+    tag: "android:privilege_level:privileged"
+    tag: "android:untrusted_input"
+  }
 }
